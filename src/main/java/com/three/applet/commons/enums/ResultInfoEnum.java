@@ -1,4 +1,4 @@
-package com.three.applet_01.commons.enums;
+package com.three.applet.commons.enums;
 
 public enum ResultInfoEnum {
 	//请求处理失败

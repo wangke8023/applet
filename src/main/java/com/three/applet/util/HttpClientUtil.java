@@ -1,4 +1,4 @@
-package com.three.applet_01.util;
+package com.three.applet.util;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

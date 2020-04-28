@@ -1,11 +1,11 @@
-package com.three.applet_01.controller;
+package com.three.applet.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.three.applet_01.commons.enums.ResultInfoEnum;
-import com.three.applet_01.util.HttpClientUtil;
-import com.three.applet_01.util.ResultData;
-import com.three.applet_01.util.WechatGetUserInfoUtil;
+import com.three.applet.commons.enums.ResultInfoEnum;
+import com.three.applet.util.HttpClientUtil;
+import com.three.applet.util.ResultData;
+import com.three.applet.util.WechatGetUserInfoUtil;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;

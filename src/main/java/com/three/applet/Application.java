@@ -1,4 +1,4 @@
-package com.three.applet_01;
+package com.three.applet;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @PropertySource(value = {"classpath:config.properties"}, encoding = "utf-8")
 @EnableTransactionManagement
-@MapperScan(basePackages = "com.three.applet_01.mapper")
+@MapperScan(basePackages = "com.three.applet.mapper")
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class Application {
 

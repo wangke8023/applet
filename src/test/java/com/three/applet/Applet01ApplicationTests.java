@@ -1,4 +1,4 @@
-package com.three.applet_01;
+package com.three.applet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.three</groupId>
-    <artifactId>applet_01</artifactId>
+    <artifactId>applet</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>applet_01</name>
+    <name>applet</name>
     <description>test</description>
 
     <properties>
