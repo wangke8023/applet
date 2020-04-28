@@ -89,7 +89,7 @@
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk18</artifactId>
+            <artifactId>bcprov-jdk16</artifactId>
             <version>1.38</version>
         </dependency>
         <dependency>
