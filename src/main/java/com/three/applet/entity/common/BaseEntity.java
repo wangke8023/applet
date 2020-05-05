@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class BaseEntity implements Serializable {
 	protected String Id;
+	protected String name;
 	protected Date createdDate;
 	protected Date updateDate;
 	
@@ -23,6 +24,14 @@ public class BaseEntity implements Serializable {
 
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Date getUpdateDate() {
