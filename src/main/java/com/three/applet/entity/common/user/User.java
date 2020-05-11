@@ -3,6 +3,7 @@ package com.three.applet.entity.common.user;
 import com.three.applet.entity.common.BaseEntity;
 
 public class User extends BaseEntity {
+	private static final long serialVersionUID = -7430997835973184827L;
 	private String password;
 	private String phoneNo;
 	public String getPassword() {

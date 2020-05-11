@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class BaseEntity implements Serializable {
+	private static final long serialVersionUID = -3112586483194878199L;
 	protected String Id;
 	protected String name;
 	protected Date createdDate;
