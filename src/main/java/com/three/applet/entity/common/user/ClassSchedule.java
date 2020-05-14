@@ -25,4 +25,12 @@ public class ClassSchedule extends BaseEntity {
 	public void setTeacherId(String teacherId) {
 		this.teacherId = teacherId;
 	}
+
+	public String getTeacherName() {
+		return teacherName;
+	}
+
+	public void setTeacherName(String teacherName) {
+		this.teacherName = teacherName;
+	}
 }
