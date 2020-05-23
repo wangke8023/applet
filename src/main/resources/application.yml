@@ -35,3 +35,7 @@ spring:
         reset-enable: true
         login-username: admin
         login-password: admin
+  security:
+    user:
+      name: admin
+      password: admin
