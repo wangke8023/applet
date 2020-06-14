@@ -1,4 +1,4 @@
-package com.three.applet.entity.common.user;
+package com.three.applet.entity.user;
 
 import com.three.applet.entity.common.BaseEntity;
 
