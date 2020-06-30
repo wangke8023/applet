@@ -7,9 +7,17 @@ public class BaseEntity implements Serializable {
 	private static final long serialVersionUID = -3112586483194878199L;
 	protected String Id;
 	protected String name;
+	protected String creater;
 	protected Date createdDate;
 	protected Date updateDate;
-	
+
+	public String getCreater() {
+		return creater;
+	}
+
+	public void setCreater(String creater) {
+		this.creater = creater;
+	}
 
 	public String getId() {
 		return Id;
