@@ -5,7 +5,8 @@ public enum ResultInfoEnum {
 	FAIL("999","失败"),
 	//请求处理成功
 	SUCCESS("000","成功"),
-	ILLEGAL_PARAMETER("901","必填参数为空:");
+	NULL_PARAMETER("901","参数格式不正确"),
+	ILLEGAL_PARAMETER("902","必填参数为空:");
 	ResultInfoEnum(String code,String msg){
 		this.code = code;
 		this.msg =msg;
