@@ -115,11 +115,11 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 <!--      注解校验参数-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>5.4.1.Final</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.hibernate</groupId>-->
+<!--            <artifactId>hibernate-validator</artifactId>-->
+<!--            <version>5.4.1.Final</version>-->
+<!--        </dependency>-->
        
     </dependencies>
 
