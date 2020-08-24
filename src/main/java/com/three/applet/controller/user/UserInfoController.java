@@ -2,6 +2,7 @@ package com.three.applet.controller.user;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.three.applet.commons.annotation.WebLogger;
 import com.three.applet.commons.enums.ResultInfoEnum;
 import com.three.applet.util.HttpClientUtil;
 import com.three.applet.util.ResultData;
@@ -21,6 +22,7 @@ public class UserInfoController {
 	@Value("${applet.secret}")
 	private String appSecret;
 	@RequestMapping("/getUserInfo")
+	@WebLogger
 	public String getUserInfo(String encryptedData, String iv,String code){
 		if(!StringUtils.isNotBlank(code)){
 			return ResultData.build(ResultInfoEnum.ILLEGAL_PARAMETER.getCode(),ResultInfoEnum.ILLEGAL_PARAMETER.getMsg()+"code");
