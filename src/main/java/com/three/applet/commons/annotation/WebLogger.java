@@ -7,5 +7,4 @@ import java.lang.annotation.*;
 @Documented
 public @interface WebLogger {
 	String value() default "";
-	String test() default "";
 }
