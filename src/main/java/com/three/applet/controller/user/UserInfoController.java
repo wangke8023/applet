@@ -32,6 +32,7 @@ public class UserInfoController {
 		String responseBody = HttpClientUtil.doGet(apiUrl);
 		System.out.println(responseBody);
 		JSONObject jsonObject = JSON.parseObject(responseBody);
+		
 		if(StringUtils.isNotBlank(jsonObject.getString("openid"))&&StringUtils.isNotBlank(jsonObject.getString("session_key"))){
 			//解密获取用户信息
 			JSONObject userInfoJSON= WechatGetUserInfoUtil.getUserInfo(encryptedData,jsonObject.getString("session_key"),iv);
