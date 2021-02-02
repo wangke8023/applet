@@ -63,4 +63,9 @@ public class UserInfoController {
 			return ResultData.build(ResultInfoEnum.FAIL.getCode(),ResultInfoEnum.FAIL.getMsg());
 		}
 	}
+
+	@RequestMapping("/haha")
+	public String haha(){
+		return "增加接口";
+	}
 }
