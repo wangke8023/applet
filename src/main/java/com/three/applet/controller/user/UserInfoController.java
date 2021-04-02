@@ -46,6 +46,8 @@ public class UserInfoController {
 				userInfo.put("province", userInfoJSON.get("province"));
 				userInfo.put("country", userInfoJSON.get("country"));
 				userInfo.put("avatarUrl", userInfoJSON.get("avatarUrl"));
+				
+				
 				// 解密unionId & openId;
 				if (userInfoJSON.get("unionId")!=null) {
 					userInfo.put("unionId", userInfoJSON.get("unionId"));
