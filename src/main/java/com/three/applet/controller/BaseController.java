@@ -16,4 +16,6 @@ public class BaseController {
 	public void setResultMap(Map<String, Object> resultMap) {
 		this.resultMap = resultMap;
 	}
+	
+	
 }
