@@ -1,0 +1,5 @@
+# 不同环境配置配置
+spring:
+  profiles:
+    active: ${spring.profiles.active}
+
