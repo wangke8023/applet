@@ -1,14 +1,14 @@
 @echo off
 echo.
-echo [ÐÅÏ¢] ÔËÐÐWeb¹¤³Ì¡£
+echo [ï¿½ï¿½Ï¢] ï¿½ï¿½ï¿½ï¿½Webï¿½ï¿½ï¿½Ì¡ï¿½
 echo.
 
 cd %~dp0
-cd ../ruoyi-admin/target
+cd ../admin/target
 
 set JAVA_OPTS=-Xms256m -Xmx1024m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=512m
 
-java -jar %JAVA_OPTS% ruoyi-admin.jar
+java -jar %JAVA_OPTS% admin.jar
 
 cd bin
 pause

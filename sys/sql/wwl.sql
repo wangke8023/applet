@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v13.1.1 (64 bit)
-MySQL - 8.0.19 : Database - wwl_ry
+MySQL - 8.0.19 : Database - wwl
 *********************************************************************
 */
 
@@ -61,9 +61,9 @@ CREATE TABLE `QRTZ_CRON_TRIGGERS` (
 /*Data for the table `QRTZ_CRON_TRIGGERS` */
 
 insert  into `QRTZ_CRON_TRIGGERS`(`sched_name`,`trigger_name`,`trigger_group`,`cron_expression`,`time_zone_id`) values
-('RuoyiScheduler','TASK_CLASS_NAME1','DEFAULT','0/10 * * * * ?','Asia/Shanghai'),
-('RuoyiScheduler','TASK_CLASS_NAME2','DEFAULT','0/15 * * * * ?','Asia/Shanghai'),
-('RuoyiScheduler','TASK_CLASS_NAME3','DEFAULT','0/20 * * * * ?','Asia/Shanghai');
+('Scheduler','TASK_CLASS_NAME1','DEFAULT','0/10 * * * * ?','Asia/Shanghai'),
+('Scheduler','TASK_CLASS_NAME2','DEFAULT','0/15 * * * * ?','Asia/Shanghai'),
+('Scheduler','TASK_CLASS_NAME3','DEFAULT','0/20 * * * * ?','Asia/Shanghai');
 
 /*Table structure for table `QRTZ_FIRED_TRIGGERS` */
 
@@ -109,9 +109,9 @@ CREATE TABLE `QRTZ_JOB_DETAILS` (
 /*Data for the table `QRTZ_JOB_DETAILS` */
 
 insert  into `QRTZ_JOB_DETAILS`(`sched_name`,`job_name`,`job_group`,`description`,`job_class_name`,`is_durable`,`is_nonconcurrent`,`is_update_data`,`requests_recovery`,`job_data`) values
-('RuoyiScheduler','TASK_CLASS_NAME1','DEFAULT',NULL,'com.wwl.quartz.util.QuartzDisallowConcurrentExecution','0','1','0','0','��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0TASK_PROPERTIESsr\0com.wwl.quartz.domain.SysJob\0\0\0\0\0\0\0\0L\0\nconcurrentt\0Ljava/lang/String;L\0cronExpressionq\0~\0	L\0invokeTargetq\0~\0	L\0jobGroupq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0jobNameq\0~\0	L\0\rmisfirePolicyq\0~\0	L\0statusq\0~\0	xr\0(com.wwl.common.core.domain.BaseEntity\0\0\0\0\0\0\0\0L\0createByq\0~\0	L\0\ncreateTimet\0Ljava/util/Date;L\0paramsq\0~\0L\0remarkq\0~\0	L\0searchValueq\0~\0	L\0updateByq\0~\0	L\0\nupdateTimeq\0~\0xpt\0adminsr\0java.util.Datehj�KYt\0\0xpw\0\0v�Ո�xpt\0\0pppt\01t\00/10 * * * * ?t\0ryTask.ryNoParamst\0DEFAULTsr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0系统默认（无参）t\03t\01x\0'),
-('RuoyiScheduler','TASK_CLASS_NAME2','DEFAULT',NULL,'com.wwl.quartz.util.QuartzDisallowConcurrentExecution','0','1','0','0','��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0TASK_PROPERTIESsr\0com.wwl.quartz.domain.SysJob\0\0\0\0\0\0\0\0L\0\nconcurrentt\0Ljava/lang/String;L\0cronExpressionq\0~\0	L\0invokeTargetq\0~\0	L\0jobGroupq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0jobNameq\0~\0	L\0\rmisfirePolicyq\0~\0	L\0statusq\0~\0	xr\0(com.wwl.common.core.domain.BaseEntity\0\0\0\0\0\0\0\0L\0createByq\0~\0	L\0\ncreateTimet\0Ljava/util/Date;L\0paramsq\0~\0L\0remarkq\0~\0	L\0searchValueq\0~\0	L\0updateByq\0~\0	L\0\nupdateTimeq\0~\0xpt\0adminsr\0java.util.Datehj�KYt\0\0xpw\0\0v�Ո�xpt\0\0pppt\01t\00/15 * * * * ?t\0ryTask.ryParams(\'ry\')t\0DEFAULTsr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0系统默认（有参）t\03t\01x\0'),
-('RuoyiScheduler','TASK_CLASS_NAME3','DEFAULT',NULL,'com.wwl.quartz.util.QuartzDisallowConcurrentExecution','0','1','0','0','��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0TASK_PROPERTIESsr\0com.wwl.quartz.domain.SysJob\0\0\0\0\0\0\0\0L\0\nconcurrentt\0Ljava/lang/String;L\0cronExpressionq\0~\0	L\0invokeTargetq\0~\0	L\0jobGroupq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0jobNameq\0~\0	L\0\rmisfirePolicyq\0~\0	L\0statusq\0~\0	xr\0(com.wwl.common.core.domain.BaseEntity\0\0\0\0\0\0\0\0L\0createByq\0~\0	L\0\ncreateTimet\0Ljava/util/Date;L\0paramsq\0~\0L\0remarkq\0~\0	L\0searchValueq\0~\0	L\0updateByq\0~\0	L\0\nupdateTimeq\0~\0xpt\0adminsr\0java.util.Datehj�KYt\0\0xpw\0\0v�Ո�xpt\0\0pppt\01t\00/20 * * * * ?t\08ryTask.ryMultipleParams(\'ry\', true, 2000L, 316.50D, 100)t\0DEFAULTsr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0系统默认（多参）t\03t\01x\0');
+('Scheduler','TASK_CLASS_NAME1','DEFAULT',NULL,'com.wwl.quartz.util.QuartzDisallowConcurrentExecution','0','1','0','0','��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0TASK_PROPERTIESsr\0com.wwl.quartz.domain.SysJob\0\0\0\0\0\0\0\0L\0\nconcurrentt\0Ljava/lang/String;L\0cronExpressionq\0~\0	L\0invokeTargetq\0~\0	L\0jobGroupq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0jobNameq\0~\0	L\0\rmisfirePolicyq\0~\0	L\0statusq\0~\0	xr\0(com.wwl.common.core.domain.BaseEntity\0\0\0\0\0\0\0\0L\0createByq\0~\0	L\0\ncreateTimet\0Ljava/util/Date;L\0paramsq\0~\0L\0remarkq\0~\0	L\0searchValueq\0~\0	L\0updateByq\0~\0	L\0\nupdateTimeq\0~\0xpt\0adminsr\0java.util.Datehj�KYt\0\0xpw\0\0v�Ո�xpt\0\0pppt\01t\00/10 * * * * ?t\0task.ryNoParamst\0DEFAULTsr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0系统默认（无参）t\03t\01x\0'),
+('Scheduler','TASK_CLASS_NAME2','DEFAULT',NULL,'com.wwl.quartz.util.QuartzDisallowConcurrentExecution','0','1','0','0','��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0TASK_PROPERTIESsr\0com.wwl.quartz.domain.SysJob\0\0\0\0\0\0\0\0L\0\nconcurrentt\0Ljava/lang/String;L\0cronExpressionq\0~\0	L\0invokeTargetq\0~\0	L\0jobGroupq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0jobNameq\0~\0	L\0\rmisfirePolicyq\0~\0	L\0statusq\0~\0	xr\0(com.wwl.common.core.domain.BaseEntity\0\0\0\0\0\0\0\0L\0createByq\0~\0	L\0\ncreateTimet\0Ljava/util/Date;L\0paramsq\0~\0L\0remarkq\0~\0	L\0searchValueq\0~\0	L\0updateByq\0~\0	L\0\nupdateTimeq\0~\0xpt\0adminsr\0java.util.Datehj�KYt\0\0xpw\0\0v�Ո�xpt\0\0pppt\01t\00/15 * * * * ?t\0task.ryParams(\'ry\')t\0DEFAULTsr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0系统默认（有参）t\03t\01x\0'),
+('Scheduler','TASK_CLASS_NAME3','DEFAULT',NULL,'com.wwl.quartz.util.QuartzDisallowConcurrentExecution','0','1','0','0','��\0sr\0org.quartz.JobDataMap���迩��\0\0xr\0&org.quartz.utils.StringKeyDirtyFlagMap�����](\0Z\0allowsTransientDataxr\0org.quartz.utils.DirtyFlagMap�.�(v\n�\0Z\0dirtyL\0mapt\0Ljava/util/Map;xpsr\0java.util.HashMap���`�\0F\0\nloadFactorI\0	thresholdxp?@\0\0\0\0\0w\0\0\0\0\0\0t\0TASK_PROPERTIESsr\0com.wwl.quartz.domain.SysJob\0\0\0\0\0\0\0\0L\0\nconcurrentt\0Ljava/lang/String;L\0cronExpressionq\0~\0	L\0invokeTargetq\0~\0	L\0jobGroupq\0~\0	L\0jobIdt\0Ljava/lang/Long;L\0jobNameq\0~\0	L\0\rmisfirePolicyq\0~\0	L\0statusq\0~\0	xr\0(com.wwl.common.core.domain.BaseEntity\0\0\0\0\0\0\0\0L\0createByq\0~\0	L\0\ncreateTimet\0Ljava/util/Date;L\0paramsq\0~\0L\0remarkq\0~\0	L\0searchValueq\0~\0	L\0updateByq\0~\0	L\0\nupdateTimeq\0~\0xpt\0adminsr\0java.util.Datehj�KYt\0\0xpw\0\0v�Ո�xpt\0\0pppt\01t\00/20 * * * * ?t\08task.ryMultipleParams(\'ry\', true, 2000L, 316.50D, 100)t\0DEFAULTsr\0java.lang.Long;��̏#�\0J\0valuexr\0java.lang.Number������\0\0xp\0\0\0\0\0\0\0t\0系统默认（多参）t\03t\01x\0');
 
 /*Table structure for table `QRTZ_LOCKS` */
 
@@ -126,8 +126,8 @@ CREATE TABLE `QRTZ_LOCKS` (
 /*Data for the table `QRTZ_LOCKS` */
 
 insert  into `QRTZ_LOCKS`(`sched_name`,`lock_name`) values
-('RuoyiScheduler','STATE_ACCESS'),
-('RuoyiScheduler','TRIGGER_ACCESS');
+('Scheduler','STATE_ACCESS'),
+('Scheduler','TRIGGER_ACCESS');
 
 /*Table structure for table `QRTZ_PAUSED_TRIGGER_GRPS` */
 
@@ -156,7 +156,7 @@ CREATE TABLE `QRTZ_SCHEDULER_STATE` (
 /*Data for the table `QRTZ_SCHEDULER_STATE` */
 
 insert  into `QRTZ_SCHEDULER_STATE`(`sched_name`,`instance_name`,`last_checkin_time`,`checkin_interval`) values
-('RuoyiScheduler','JL-PC1614684793457',1614684847386,15000);
+('Scheduler','JL-PC1614684793457',1614684847386,15000);
 
 /*Table structure for table `QRTZ_SIMPLE_TRIGGERS` */
 
@@ -229,9 +229,9 @@ CREATE TABLE `QRTZ_TRIGGERS` (
 /*Data for the table `QRTZ_TRIGGERS` */
 
 insert  into `QRTZ_TRIGGERS`(`sched_name`,`trigger_name`,`trigger_group`,`job_name`,`job_group`,`description`,`next_fire_time`,`prev_fire_time`,`priority`,`trigger_state`,`trigger_type`,`start_time`,`end_time`,`calendar_name`,`misfire_instr`,`job_data`) values
-('RuoyiScheduler','TASK_CLASS_NAME1','DEFAULT','TASK_CLASS_NAME1','DEFAULT',NULL,1614684800000,-1,5,'PAUSED','CRON',1614684794000,0,NULL,2,''),
-('RuoyiScheduler','TASK_CLASS_NAME2','DEFAULT','TASK_CLASS_NAME2','DEFAULT',NULL,1614684795000,-1,5,'PAUSED','CRON',1614684795000,0,NULL,2,''),
-('RuoyiScheduler','TASK_CLASS_NAME3','DEFAULT','TASK_CLASS_NAME3','DEFAULT',NULL,1614684800000,-1,5,'PAUSED','CRON',1614684797000,0,NULL,2,'');
+('Scheduler','TASK_CLASS_NAME1','DEFAULT','TASK_CLASS_NAME1','DEFAULT',NULL,1614684800000,-1,5,'PAUSED','CRON',1614684794000,0,NULL,2,''),
+('Scheduler','TASK_CLASS_NAME2','DEFAULT','TASK_CLASS_NAME2','DEFAULT',NULL,1614684795000,-1,5,'PAUSED','CRON',1614684795000,0,NULL,2,''),
+('Scheduler','TASK_CLASS_NAME3','DEFAULT','TASK_CLASS_NAME3','DEFAULT',NULL,1614684800000,-1,5,'PAUSED','CRON',1614684797000,0,NULL,2,'');
 
 /*Table structure for table `gen_table` */
 
@@ -264,16 +264,16 @@ CREATE TABLE `gen_table` (
 /*Data for the table `gen_table` */
 
 insert  into `gen_table`(`table_id`,`table_name`,`table_comment`,`sub_table_name`,`sub_table_fk_name`,`class_name`,`tpl_category`,`package_name`,`module_name`,`business_name`,`function_name`,`function_author`,`gen_type`,`gen_path`,`options`,`create_by`,`create_time`,`update_by`,`update_time`,`remark`) values
-(1,'sys_config','参数配置表',NULL,NULL,'SysConfig','crud','com.ruoyi.system','system','config','参数配置','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(2,'sys_dept','部门表',NULL,NULL,'SysDept','crud','com.ruoyi.system','system','dept','部门','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(3,'sys_dict_data','字典数据表',NULL,NULL,'SysDictData','crud','com.ruoyi.system','system','data','字典数据','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(4,'sys_dict_type','字典类型表',NULL,NULL,'SysDictType','crud','com.ruoyi.system','system','type','字典类型','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(5,'sys_job','定时任务调度表',NULL,NULL,'SysJob','crud','com.ruoyi.system','system','job','定时任务调度','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(6,'sys_job_log','定时任务调度日志表',NULL,NULL,'SysJobLog','crud','com.ruoyi.system','system','log','定时任务调度日志','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(7,'sys_logininfor','系统访问记录',NULL,NULL,'SysLogininfor','crud','com.ruoyi.system','system','logininfor','系统访问记录','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(8,'sys_menu','菜单权限表',NULL,NULL,'SysMenu','crud','com.ruoyi.system','system','menu','菜单权限','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(9,'sys_notice','通知公告表',NULL,NULL,'SysNotice','crud','com.ruoyi.system','system','notice','通知公告','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
-(10,'sys_oper_log','操作日志记录',NULL,NULL,'SysOperLog','crud','com.ruoyi.system','system','log','操作日志记录','ruoyi','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL);
+(1,'sys_config','参数配置表',NULL,NULL,'SysConfig','crud','com.wwl.system','system','config','参数配置','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(2,'sys_dept','部门表',NULL,NULL,'SysDept','crud','com.wwl.system','system','dept','部门','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(3,'sys_dict_data','字典数据表',NULL,NULL,'SysDictData','crud','com.wwl.system','system','data','字典数据','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(4,'sys_dict_type','字典类型表',NULL,NULL,'SysDictType','crud','com.wwl.system','system','type','字典类型','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(5,'sys_job','定时任务调度表',NULL,NULL,'SysJob','crud','com.wwl.system','system','job','定时任务调度','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(6,'sys_job_log','定时任务调度日志表',NULL,NULL,'SysJobLog','crud','com.wwl.system','system','log','定时任务调度日志','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(7,'sys_logininfor','系统访问记录',NULL,NULL,'SysLogininfor','crud','com.wwl.system','system','logininfor','系统访问记录','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(8,'sys_menu','菜单权限表',NULL,NULL,'SysMenu','crud','com.wwl.system','system','menu','菜单权限','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(9,'sys_notice','通知公告表',NULL,NULL,'SysNotice','crud','com.wwl.system','system','notice','通知公告','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL),
+(10,'sys_oper_log','操作日志记录',NULL,NULL,'SysOperLog','crud','com.wwl.system','system','log','操作日志记录','wwl','0','/',NULL,'admin','2021-01-14 17:10:34','',NULL,NULL);
 
 /*Table structure for table `gen_table_column` */
 
@@ -823,9 +823,9 @@ CREATE TABLE `sys_job` (
 /*Data for the table `sys_job` */
 
 insert  into `sys_job`(`job_id`,`job_name`,`job_group`,`invoke_target`,`cron_expression`,`misfire_policy`,`concurrent`,`status`,`create_by`,`create_time`,`update_by`,`update_time`,`remark`) values
-(1,'系统默认（无参）','DEFAULT','ryTask.ryNoParams','0/10 * * * * ?','3','1','1','admin','2021-01-14 15:39:13','',NULL,''),
-(2,'系统默认（有参）','DEFAULT','ryTask.ryParams(\'ry\')','0/15 * * * * ?','3','1','1','admin','2021-01-14 15:39:13','',NULL,''),
-(3,'系统默认（多参）','DEFAULT','ryTask.ryMultipleParams(\'ry\', true, 2000L, 316.50D, 100)','0/20 * * * * ?','3','1','1','admin','2021-01-14 15:39:13','',NULL,'');
+(1,'系统默认（无参）','DEFAULT','task.noParams','0/10 * * * * ?','3','1','1','admin','2021-01-14 15:39:13','',NULL,''),
+(2,'系统默认（有参）','DEFAULT','task.params(\'ry\')','0/15 * * * * ?','3','1','1','admin','2021-01-14 15:39:13','',NULL,''),
+(3,'系统默认（多参）','DEFAULT','task.multipleParams(\'ry\', true, 2000L, 316.50D, 100)','0/20 * * * * ?','3','1','1','admin','2021-01-14 15:39:13','',NULL,'');
 
 /*Table structure for table `sys_job_log` */
 
@@ -1310,11 +1310,11 @@ CREATE TABLE `sys_oper_log` (
 /*Data for the table `sys_oper_log` */
 
 insert  into `sys_oper_log`(`oper_id`,`title`,`business_type`,`method`,`request_method`,`operator_type`,`oper_name`,`dept_name`,`oper_url`,`oper_ip`,`oper_location`,`oper_param`,`json_result`,`status`,`error_msg`,`oper_time`) values
-(100,'用户管理',2,'com.ruoyi.web.controller.system.SysUserController.edit()','PUT',1,'admin',NULL,'/system/user','127.0.0.1','内网IP','{\"roles\":[{\"flag\":false,\"roleId\":2,\"admin\":false,\"dataScope\":\"2\",\"params\":{},\"roleSort\":\"2\",\"deptCheckStrictly\":false,\"menuCheckStrictly\":false,\"roleKey\":\"common\",\"roleName\":\"普通角色\",\"status\":\"0\"}],\"phonenumber\":\"15666666666\",\"admin\":false,\"loginDate\":1610609953000,\"remark\":\"测试员\",\"delFlag\":\"0\",\"password\":\"\",\"updateBy\":\"admin\",\"postIds\":[2],\"loginIp\":\"127.0.0.1\",\"email\":\"ry@qq.com\",\"nickName\":\"若依\",\"sex\":\"1\",\"deptId\":105,\"avatar\":\"\",\"dept\":{\"deptName\":\"测试部门\",\"leader\":\"若依\",\"deptId\":105,\"orderNum\":\"3\",\"params\":{},\"parentId\":101,\"children\":[],\"status\":\"0\"},\"params\":{},\"userName\":\"ry\",\"userId\":2,\"createBy\":\"admin\",\"roleIds\":[2],\"createTime\":1610609953000,\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:08:45'),
-(101,'通知公告',2,'com.ruoyi.web.controller.system.SysNoticeController.edit()','PUT',1,'admin',NULL,'/system/notice','127.0.0.1','内网IP','{\"noticeContent\":\"维护内容\",\"createBy\":\"admin\",\"createTime\":1610609954000,\"updateBy\":\"admin\",\"noticeType\":\"1\",\"remark\":\"管理员\",\"params\":{},\"noticeId\":2,\"noticeTitle\":\"维护通知：2018-07-01 若依系统凌晨维护\",\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:08:57'),
-(102,'通知公告',3,'com.ruoyi.web.controller.system.SysNoticeController.remove()','DELETE',1,'admin',NULL,'/system/notice/2','127.0.0.1','内网IP','{noticeIds=2}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:08:59'),
-(103,'通知公告',1,'com.ruoyi.web.controller.system.SysNoticeController.add()','POST',1,'admin',NULL,'/system/notice','127.0.0.1','内网IP','{\"noticeContent\":\"<p><br></p>\",\"createBy\":\"admin\",\"noticeType\":\"1\",\"params\":{},\"noticeTitle\":\"rwes\",\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:09:04'),
-(104,'代码生成',6,'com.ruoyi.generator.controller.GenController.importTableSave()','POST',1,'admin',NULL,'/tool/gen/importTable','127.0.0.1','内网IP','sys_config,sys_dept,sys_dict_data,sys_dict_type,sys_job,sys_job_log,sys_logininfor,sys_menu,sys_notice,sys_oper_log','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:10:34'),
+(100,'用户管理',2,'com.wwl.web.controller.system.SysUserController.edit()','PUT',1,'admin',NULL,'/system/user','127.0.0.1','内网IP','{\"roles\":[{\"flag\":false,\"roleId\":2,\"admin\":false,\"dataScope\":\"2\",\"params\":{},\"roleSort\":\"2\",\"deptCheckStrictly\":false,\"menuCheckStrictly\":false,\"roleKey\":\"common\",\"roleName\":\"普通角色\",\"status\":\"0\"}],\"phonenumber\":\"15666666666\",\"admin\":false,\"loginDate\":1610609953000,\"remark\":\"测试员\",\"delFlag\":\"0\",\"password\":\"\",\"updateBy\":\"admin\",\"postIds\":[2],\"loginIp\":\"127.0.0.1\",\"email\":\"ry@qq.com\",\"nickName\":\"若依\",\"sex\":\"1\",\"deptId\":105,\"avatar\":\"\",\"dept\":{\"deptName\":\"测试部门\",\"leader\":\"若依\",\"deptId\":105,\"orderNum\":\"3\",\"params\":{},\"parentId\":101,\"children\":[],\"status\":\"0\"},\"params\":{},\"userName\":\"ry\",\"userId\":2,\"createBy\":\"admin\",\"roleIds\":[2],\"createTime\":1610609953000,\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:08:45'),
+(101,'通知公告',2,'com.wwl.web.controller.system.SysNoticeController.edit()','PUT',1,'admin',NULL,'/system/notice','127.0.0.1','内网IP','{\"noticeContent\":\"维护内容\",\"createBy\":\"admin\",\"createTime\":1610609954000,\"updateBy\":\"admin\",\"noticeType\":\"1\",\"remark\":\"管理员\",\"params\":{},\"noticeId\":2,\"noticeTitle\":\"维护通知：2018-07-01 若依系统凌晨维护\",\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:08:57'),
+(102,'通知公告',3,'com.wwl.web.controller.system.SysNoticeController.remove()','DELETE',1,'admin',NULL,'/system/notice/2','127.0.0.1','内网IP','{noticeIds=2}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:08:59'),
+(103,'通知公告',1,'com.wwl.web.controller.system.SysNoticeController.add()','POST',1,'admin',NULL,'/system/notice','127.0.0.1','内网IP','{\"noticeContent\":\"<p><br></p>\",\"createBy\":\"admin\",\"noticeType\":\"1\",\"params\":{},\"noticeTitle\":\"rwes\",\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:09:04'),
+(104,'代码生成',6,'com.wwl.generator.controller.GenController.importTableSave()','POST',1,'admin',NULL,'/tool/gen/importTable','127.0.0.1','内网IP','sys_config,sys_dept,sys_dict_data,sys_dict_type,sys_job,sys_job_log,sys_logininfor,sys_menu,sys_notice,sys_oper_log','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:10:34'),
 (105,'通知公告',2,'com.wwl.web.controller.system.SysNoticeController.edit()','PUT',1,'admin',NULL,'/system/notice','127.0.0.1','内网IP','{\"noticeContent\":\"<p><br></p>\",\"createBy\":\"admin\",\"createTime\":1610615344000,\"updateBy\":\"admin\",\"noticeType\":\"1\",\"params\":{},\"noticeId\":10,\"noticeTitle\":\"rwes\",\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:44:58'),
 (106,'通知公告',3,'com.wwl.web.controller.system.SysNoticeController.remove()','DELETE',1,'admin',NULL,'/system/notice/10','127.0.0.1','内网IP','{noticeIds=10}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:45:01'),
 (107,'通知公告',1,'com.wwl.web.controller.system.SysNoticeController.add()','POST',1,'admin',NULL,'/system/notice','127.0.0.1','内网IP','{\"createBy\":\"admin\",\"noticeType\":\"1\",\"params\":{},\"noticeTitle\":\"ewtwet\",\"status\":\"0\"}','{\"msg\":\"操作成功\",\"code\":200}',0,NULL,'2021-01-14 17:45:06'),
@@ -1624,8 +1624,8 @@ CREATE TABLE `sys_user` (
 /*Data for the table `sys_user` */
 
 insert  into `sys_user`(`user_id`,`dept_id`,`user_name`,`nick_name`,`user_type`,`email`,`phonenumber`,`sex`,`avatar`,`password`,`status`,`del_flag`,`login_ip`,`login_date`,`create_by`,`create_time`,`update_by`,`update_time`,`remark`) values
-(1,103,'admin','wwl','00','wwl@163.com','15888888888','1','/profile/avatar/2021/02/06/2899f110-5b01-4abb-b54c-61643f32bc86.jpeg','$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2','0','0','127.0.0.1','2021-01-14 15:39:13','admin','2021-01-14 15:39:13','',NULL,'管理员'),
-(2,105,'ry','wwl','00','wwl@qq.com','15666666666','1','','$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.ulu33dHOiBE8ByOhJIrdAu2','0','2','127.0.0.1','2021-01-14 15:39:13','admin','2021-01-14 15:39:13','admin','2021-01-15 20:52:07','测试员'),
+(1,103,'admin','wwl','00','wwl@163.com','15888888888','1','/profile/avatar/2021/02/06/2899f110-5b01-4abb-b54c-61643f32bc86.jpeg','$2a$10$KTBu09ed743F.IS1Y5TCluX8Jg17xnef5VBwDHjoi.MsgpU.fsQQa','0','0','127.0.0.1','2021-01-14 15:39:13','admin','2021-01-14 15:39:13','',NULL,'管理员'),
+(2,105,'wk','wwl','00','wwl@qq.com','15666666666','1','','$2a$10$KTBu09ed743F.IS1Y5TCluX8Jg17xnef5VBwDHjoi.MsgpU.fsQQa','0','2','127.0.0.1','2021-01-14 15:39:13','admin','2021-01-14 15:39:13','admin','2021-01-15 20:52:07','测试员'),
 (100,100,'test','test','00','','','0','','$2a$10$KTBu09ed743F.IS1Y5TCluX8Jg17xnef5VBwDHjoi.MsgpU.fsQQa','0','0','',NULL,'admin','2021-01-15 20:52:55','admin','2021-01-15 20:53:33',NULL);
 
 /*Table structure for table `sys_user_post` */
