@@ -19,22 +19,6 @@ spring:
     restart:
       # 热部署开关
       enabled: true
-
-# 项目相关配置
-wwl:
-  # 实例演示开关
-  demoEnabled: false
-  # 文件路径 示例（ Windows配置D:/wwl/uploadPath，Linux配置 /home/wwl/uploadPath）
-  profile: ./wwl/uploadPath
-  # 获取ip地址开关
-  addressEnabled: false
-  # 验证码类型 math 数组计算 char 字符验证
-  captchaType: math
-  #版本号
-  version: 1.0
-  name: wwl后台管理
-  copyrightYear: 2021-2099
-
 # 开发环境配置
 server:
   # 服务器的HTTP端口，默认为7500
@@ -49,6 +33,22 @@ server:
     max-threads: 800
     # Tomcat启动初始化的线程数，默认值25
     min-spare-threads: 30
+# 项目相关配置
+wwl:
+  # 实例演示开关
+  demoEnabled: false
+  # 文件路径 示例（ Windows配置D:/wwl/uploadPath，Linux配置 /home/wwl/uploadPath）
+  profile: ./wwl/uploadPath
+  # 获取ip地址开关
+  addressEnabled: false
+  # 验证码类型 math 数组计算 char 字符验证
+  captchaType: char
+  #版本号
+  version: 1.0
+  name: wwl后台管理
+  copyrightYear: 2021-2099
+
+
 
 # 日志配置
 logging:
