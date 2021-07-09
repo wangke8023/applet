@@ -6,7 +6,7 @@ import Element from 'element-ui'
 import './assets/styles/element-variables.scss'
 
 import '@/assets/styles/index.scss' // global css
-import '@/assets/styles/ruoyi.scss' // wk css
+import '@/assets/styles/wwl.scss' // wk css
 import App from './App'
 import store from './store'
 import router from './router'
