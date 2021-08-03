@@ -16,7 +16,7 @@ import com.wwl.framework.interceptor.RepeatSubmitInterceptor;
 /**
  * 通用配置
  * 
- * @author wk
+ * @author wk 
  */
 @Configuration
 public class ResourcesConfig implements WebMvcConfigurer
