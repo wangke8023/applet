@@ -30,7 +30,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import lombok.Data;
 
 /**
- * @author <a href="https://github.com/binarywang">Binary Wang</a>
+ * @author wangke
  */
 @Data
 @ConfigurationProperties(prefix = "wx.ma")
