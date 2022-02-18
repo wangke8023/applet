@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * @author wangke
- * @description:
+ * @description:这是一个测试程序
  * @date 2021/06/25
  */
 @SpringBootTest
