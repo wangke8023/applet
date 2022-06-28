@@ -87,7 +87,8 @@ const request = (url, method, data, showLoading) => {
 module.exports = {
   request,
   login: (data) => {//小程序登录接口
-    return request('/weixin/api/ma/wxuser/login', 'post', data, false)
+    // return request('/weixin/api/ma/wxuser/login', 'post', data, false)
+    return request('/system/appUser/loginByWX', 'post', data, false)
   },
   wxUserGet: (data) => {//微信用户查询
     return request('/weixin/api/ma/wxuser', 'get', null, false)
