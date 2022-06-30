@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/mall/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/mall/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/weixin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sys/weixin/src/main/resources" charset="UTF-8" />
   </component>
 </project>
