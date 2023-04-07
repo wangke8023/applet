@@ -1,6 +1,6 @@
 package com.wwl.framework.config.typehandler;
 
-import cn.hutool.json.JSONUtil;
+import com.alibaba.fastjson.JSONObject;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedJdbcTypes;
@@ -24,25 +24,25 @@ public class ArrayStringTypeHandler extends BaseTypeHandler<String[]> {
 	@Override
 	public void setNonNullParameter(PreparedStatement ps, int i,
 									String[] parameter, JdbcType jdbcType) throws SQLException {
-		ps.setString(i, JSONUtil.toJsonStr(parameter));
+		ps.setString(i, JSONObject.toJSONString(parameter));
 	}
 
 	@Override
 	public String[] getNullableResult(ResultSet rs, String columnName)
 			throws SQLException {
-		return JSONUtil.parseArray(rs.getString(columnName)).toArray(l);
+		return JSONObject.parseArray(rs.getString(columnName)).toArray(l);
 	}
 
 	@Override
 	public String[] getNullableResult(ResultSet rs, int columnIndex)
 			throws SQLException {
-		return JSONUtil.parseArray(rs.getString(columnIndex)).toArray(l);
+		return JSONObject.parseArray(rs.getString(columnIndex)).toArray(l);
 	}
 
 	@Override
 	public String[] getNullableResult(CallableStatement cs, int columnIndex)
 			throws SQLException {
-		return JSONUtil.parseArray(cs.getString(columnIndex)).toArray(l);
+		return JSONObject.parseArray(cs.getString(columnIndex)).toArray(l);
 	}
 
 }
