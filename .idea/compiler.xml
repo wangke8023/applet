@@ -15,20 +15,10 @@
         <module name="admin" />
         <module name="generator" />
         <module name="quartz" />
-        <module name="applet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="admin" target="1.8" />
       <module name="applet" target="1.8" />
-      <module name="common" target="1.8" />
-      <module name="framework" target="1.8" />
-      <module name="generator" target="1.8" />
-      <module name="mall" target="1.8" />
-      <module name="quartz" target="1.8" />
-      <module name="sys" target="1.8" />
-      <module name="system" target="1.8" />
-      <module name="weixin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
