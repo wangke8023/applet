@@ -6,7 +6,6 @@
  */
 package com.wwl.web.controller.mall;
 
-import cn.hutool.core.convert.Convert;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wwl.common.core.controller.BaseController;
@@ -20,6 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -124,7 +124,7 @@ public class GoodsSpuController extends BaseController {
 		GoodsSpu goodsSpu = new GoodsSpu();
 		goodsSpu.setShelf(shelf);
 		return AjaxResult.success(goodsSpuService.update(goodsSpu,Wrappers.<GoodsSpu>lambdaQuery()
-				.in(GoodsSpu::getId, Convert.toList(ids))));
+				.in(GoodsSpu::getId, Arrays.asList(ids))));
 	}
 
     /**
