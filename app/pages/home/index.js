@@ -40,6 +40,62 @@ Page({
     })
   },
   loadData(){
+    // 获取用户openId
+wx.login({
+  success: function (res) {
+    if (res.code) {
+      // 发起网络请求，获取openId
+      wx.request({
+        url: 'https://example.com/getOpenId',
+        data: {
+          code: res.code
+        },
+        success: function (res) {
+          const openId = res.data.openId;
+          // 发起网络请求，判断用户是否绑定手机号
+          wx.request({
+            url: 'https://example.com/checkPhone',
+            data: {
+              openId: openId
+            },
+            success: function (res) {
+              if (!res.data.hasPhone) {
+                // 获取手机号
+                wx.login({
+                  success: function (res) {
+                    if (res.code) {
+                      wx.request({
+                        url: 'https://example.com/getPhone',
+                        data: {
+                          code: res.code
+                        },
+                        success: function (res) {
+                          const phone = res.data.phone;
+                          // 发起网络请求，绑定手机号
+                          wx.request({
+                            url: 'https://example.com/bindPhone',
+                            data: {
+                              openId: openId,
+                              phone: phone
+                            },
+                            success: function (res) {
+                              console.log('绑定手机号成功');
+                            }
+                          })
+                        }
+                      })
+                    }
+                  }
+                })
+              }
+            }
+          })
+        }
+      })
+    }
+  }
+})
+
     this.goodsNew()
     this.goodsHot()
     this.goodsPage()
