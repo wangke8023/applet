@@ -114,7 +114,7 @@ public class GoodsSpuController extends BaseController {
 	/**
 	 * 商品上下架操作
 	 * @param shelf
-	 * @param ids
+	 * @param ids 一组id
 	 * @return AjaxResult
 	 */
 	@ApiOperation(value = "商品上下架操作")
