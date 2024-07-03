@@ -2,7 +2,7 @@ package com.wwl.common.constant;
 
 /**
  * 通用常量信息
- * 
+ *
  * @author wk
  */
 public class Constants
@@ -61,7 +61,7 @@ public class Constants
      * 登录用户 redis key
      */
     public static final String LOGIN_TOKEN_KEY = "login_tokens:";
-    
+
     /**
      * 防重提交 redis key
      */
@@ -126,4 +126,5 @@ public class Constants
      * 资源映射路径 前缀
      */
     public static final String RESOURCE_PREFIX = "/profile";
+    public static final String RESOURCE_PREFIX_JB = "/jb";
 }
