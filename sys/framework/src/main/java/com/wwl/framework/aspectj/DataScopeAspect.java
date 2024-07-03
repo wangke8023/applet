@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 
 /**
- * 数据过滤处理
+ * 数据过滤处理器
  *
  * @author wangke
  */
