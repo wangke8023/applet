@@ -4,7 +4,7 @@ import com.wwl.common.utils.MessageUtils;
 import com.wwl.common.utils.StringUtils;
 
 /**
- * 基础异常
+ * 基础异常 错误描述
  * 
  * @author wk
  */
